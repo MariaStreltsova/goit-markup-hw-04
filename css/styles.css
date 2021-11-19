@@ -74,7 +74,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+svg {
+  fill: currentColor;
+}
 /* ------------------------------------------------header---------------------------------*/
 
 .header-container {
@@ -142,23 +144,32 @@ body {
   color: var(--accent-text-color);
 }
 /*------------------------------------------------direction----------------------------------*/
-.list-direction .link {
+.link-direction {
+  display: flex;
+  align-items: center;
   color: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.list-direction .link:hover,
-.list-direction .link:focus {
-  color: var(--accent-text-color);
-}
+
 .item-direction {
+  display: flex;
   margin-right: 50px;
 }
 .item-direction:last-child {
   margin-right: 0;
 }
+.link-direction:hover,
+.link-direction:focus {
+  color: var(--accent-text-color);
+}
+.direction-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /*------------------------------------------------hero----------------------------------*/
 
 .hero {
@@ -268,6 +279,7 @@ body {
   margin-top: 30px;
 }
 /*------------------------------------------------team----------------------------------*/
+
 .team .title {
   font-weight: 700;
   font-size: 36px;

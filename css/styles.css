@@ -385,10 +385,7 @@ svg {
   justify-content: center;
   align-items: center;
 }
-.item-clients:focus,
-.item-clients:hover {
-  color: var(--accent-text-color);
-}
+
 .item-clients + .item-clients {
   margin-left: 30px;
 }
@@ -403,6 +400,7 @@ svg {
 .link-clients:hover,
 .link-clients:focus {
   color: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 .icon-clients {
   fill: currentColor;
